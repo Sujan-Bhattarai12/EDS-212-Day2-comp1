@@ -32,3 +32,10 @@ eval(dg_dz)
 ```
 
 This are changing being made for the git
+
+```{r}
+gz    <- expression(2*z^3-10.5*z^2+4.1) 
+dg_dz <-  D(gz, 'z')
+z <- seq(from=1, to=10, length=20)
+eval(dg_dz)
+```
