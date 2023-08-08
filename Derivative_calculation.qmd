@@ -46,3 +46,5 @@ dg_dz <-  D(gz, 'z')
 z <- seq(from=1, to=30, length=20)
 eval(dg_dz)
 ```
+
+The changes made
