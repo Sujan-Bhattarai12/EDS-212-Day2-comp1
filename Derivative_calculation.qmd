@@ -30,3 +30,5 @@ dg_dz <-  D(gz, 'z')
 z <- seq(from=1, to=3, length=20)
 eval(dg_dz)
 ```
+
+This are changing being made for the git
