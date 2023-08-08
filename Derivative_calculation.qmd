@@ -1,0 +1,32 @@
+---
+title: "first_class"
+author: "Sujan Bhattarai"
+format: html
+editor: visual
+---
+
+## Derivatives in R
+
+```{r}
+#create the expression for calculating derivative
+fx    <- expression(3.1*(x^4)-28*x)
+df_dx <-  D(fx, 'x')
+x <- 10
+eval(df_dx)
+```
+
+```{r}
+gz    <- expression(2*z^3-10.5*z^2+4.1) 
+dg_dz <-  D(gz, 'z')
+z <- 3.6
+eval(dg_dz)
+```
+
+Try it for the sequence
+
+```{r}
+gz    <- expression(2*z^3-10.5*z^2+4.1) 
+dg_dz <-  D(gz, 'z')
+z <- seq(from=1, to=3, length=20)
+eval(dg_dz)
+```
