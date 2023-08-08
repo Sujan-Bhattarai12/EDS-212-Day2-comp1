@@ -176,6 +176,18 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 [19] 344.451524 390.000000</code></pre>
 </div>
 </div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>gz    <span class="ot">&lt;-</span> <span class="fu">expression</span>(<span class="dv">2</span><span class="sc">*</span>z<span class="sc">^</span><span class="dv">3</span><span class="fl">-10.5</span><span class="sc">*</span>z<span class="sc">^</span><span class="dv">2</span><span class="fl">+4.1</span>) </span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>dg_dz <span class="ot">&lt;-</span>  <span class="fu">D</span>(gz, <span class="st">'z'</span>)</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>z <span class="ot">&lt;-</span> <span class="fu">seq</span>(<span class="at">from=</span><span class="dv">1</span>, <span class="at">to=</span><span class="dv">15</span>, <span class="at">length=</span><span class="dv">20</span>)</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="fu">eval</span>(dg_dz)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> [1]  -15.000000  -18.373961  -15.232687   -5.576177   10.595568   33.282548
+ [7]   62.484765   98.202216  140.434903  189.182825  244.445983  306.224377
+[13]  374.518006  449.326870  530.650970  618.490305  712.844875  813.714681
+[19]  921.099723 1035.000000</code></pre>
+</div>
+</div>
 </section>
 
 </main>
